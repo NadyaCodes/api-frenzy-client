@@ -6,7 +6,7 @@ export default function Satellite() {
 
   useEffect(() => {
     const fetchPic = async () => {
-      axios.get("/satellite-pic").then((data) => {
+      axios.get("https://api-frenzy.herokuapp.com/satellite-pic").then((data) => {
         setPic(data.data.url)
       })
     }

@@ -7,7 +7,7 @@ export default function Animals() {
 
   useEffect(() => {
     const fetchAnimals = async () => {
-      axios.get("/animals").then((data) => {
+      axios.get("https://api-frenzy.herokuapp.com/animals").then((data) => {
         setAnimals(data.data)
       })
     }

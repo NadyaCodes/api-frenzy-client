@@ -6,7 +6,7 @@ export default function Fox() {
 
   useEffect(() => {
     const fetchFox = async () => {
-      axios.get("/fox").then((data) => {
+      axios.get("https://api-frenzy.herokuapp.com/fox").then((data) => {
         setFox(data.data.image)
       })
     }

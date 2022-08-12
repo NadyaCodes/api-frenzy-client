@@ -8,7 +8,7 @@ export default function XKCD() {
 
   useEffect(() => {
     const fetchXKCD = async () => {
-      axios.get("/xkcd").then((data) =>{
+      axios.get("https://api-frenzy.herokuapp.com/xkcd").then((data) =>{
       setComic(data.data.img)
       })
     }

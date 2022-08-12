@@ -7,7 +7,7 @@ export default function User() {
   
   useEffect(() => {
     const fetchUsers = async () => {
-      axios.get('/users').then((data) => {
+      axios.get('https://api-frenzy.herokuapp.com/users').then((data) => {
         setUsers(data.data)
         console.log(data.data)
       })

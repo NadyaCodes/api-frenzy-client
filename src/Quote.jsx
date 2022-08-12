@@ -7,7 +7,7 @@ export default function Quote() {
 
   useEffect(() => {
     const fetchQuotes = async () => {
-      axios.get('/quotes').then((data) => {
+      axios.get('https://api-frenzy.herokuapp.com/quotes').then((data) => {
         console.log(data.data)
         setQuotes(data.data)
       })
